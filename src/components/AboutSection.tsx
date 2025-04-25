@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Brain, Code, Rocket, Bot } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -71,10 +70,10 @@ const AboutSection = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Who I Am</h3>
             <p className="text-muted-foreground mb-6">
-              I'm Sreejon, an AI engineer and creative technologist specializing in developing cutting-edge AI systems and applications. With over 6 years of experience in the field, I combine technical expertise with creative problem-solving to build solutions that make a difference.
+              I'm a B.Tech student in Computer Science and Engineering at LPU, specializing as a Data Analyst. With a keen interest in AI and ML, I'm passionate about using data-driven insights to solve real-world problems.
             </p>
             <p className="text-muted-foreground">
-              My work spans across various domains including computer vision, natural language processing, generative AI, and interactive 3D experiences. I'm particularly interested in the intersection of AI and creative technologies, exploring how machine learning can enhance human creativity and capabilities.
+              I've worked on various projects ranging from AI-powered apps to sustainability tools, always focused on creating impactful solutions. I'm confident, adaptable, and thrive in collaborative environments, with a solution-oriented mindset. Eager to learn and grow, I continuously seek new opportunities to expand my skills and contribute to meaningful innovations.
             </p>
           </motion.div>
 
