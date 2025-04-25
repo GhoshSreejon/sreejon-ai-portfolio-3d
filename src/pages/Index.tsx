@@ -1,12 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Suspense, lazy } from 'react';
+import { motion } from 'framer-motion';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+
+// Lazy load the Scene3D component to improve initial load time
+const Scene3D = lazy(() => import('@/components/scene/Scene3D'));
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Suspense fallback={
+        <div className="fixed inset-0 flex items-center justify-center">
+          <div className="animate-pulse text-primary">Loading 3D Scene...</div>
+        </div>
+      }>
+        <Scene3D />
+      </Suspense>
+      
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="relative z-10"
+      >
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </motion.div>
     </div>
   );
 };
