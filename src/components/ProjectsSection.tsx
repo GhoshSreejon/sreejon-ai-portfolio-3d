@@ -9,42 +9,42 @@ import { cn } from '@/lib/utils';
 const projects = [
   {
     id: 1,
-    title: "AI Vision Assistant",
-    description: "A computer vision system that helps users identify objects and scenes in real-time, built with PyTorch and React.",
-    tags: ["Computer Vision", "PyTorch", "React"],
-    image: "https://images.unsplash.com/photo-1573164713619-24c711fe7878?q=80&w=800&auto=format&fit=crop",
+    title: "Emotion & Body Language Analysis App",
+    description: "Real-time analyzer using Python, OpenCV, and DesigNAR to track emotions and body language. Integrated Google Gemini API for AI-driven behavioral insights.",
+    tags: ["Python", "AI", "OpenCV", "Machine Learning", "Google Gemini API"],
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=800&auto=format&fit=crop",
     link: "#",
-    github: "#",
+    github: "https://github.com/GhoshSreejon",
     featured: true
   },
   {
     id: 2,
-    title: "NLP Document Analyzer",
-    description: "An intelligent system that extracts key information from complex documents using advanced NLP techniques.",
-    tags: ["NLP", "TensorFlow", "Python"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
+    title: "E-mail Spam Classifier",
+    description: "Built a Native Bayes (Multinomial) model with near 100% precision for spam detection using Python, Scikit-Learn, and real-time spam detection techniques.",
+    tags: ["Python", "Machine Learning", "Scikit-Learn", "NLP"],
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
     link: "#",
-    github: "#",
+    github: "https://github.com/GhoshSreejon",
     featured: true
   },
   {
     id: 3,
-    title: "3D Neural Network Visualizer",
-    description: "Interactive WebGL visualization of neural networks, allowing users to explore AI models in three dimensions.",
-    tags: ["Three.js", "WebGL", "React"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop",
+    title: "World Beverage Sales Dashboard",
+    description: "Data interpretation dashboard analyzing global beverage sales, top-selling products, seasonal trends, and regional preferences using Tableau and data visualization.",
+    tags: ["Tableau", "Data Analysis", "Data Visualization"],
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
     link: "#",
-    github: "#",
+    github: "https://github.com/GhoshSreejon",
     featured: false
   },
   {
     id: 4,
-    title: "Generative Art Creator",
-    description: "A creative AI tool that generates unique digital artwork based on text prompts and style controls.",
-    tags: ["Generative AI", "GANs", "TypeScript"],
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop",
+    title: "Bike Sales Dashboard",
+    description: "Analyzed bike purchase trends, identifying factors influencing bike purchases. Created pivot tables, bar charts, and trend lines to highlight insights.",
+    tags: ["Excel", "Data Analysis", "Pivot Charts"],
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=800&auto=format&fit=crop",
     link: "#",
-    github: "#",
+    github: "https://github.com/GhoshSreejon",
     featured: false
   }
 ];
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
             Featured <span className="bg-clip-text text-transparent bg-gradient-to-r from-theme-purple to-theme-blue">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            Exploring the intersection of AI and technology through innovative solutions
+            Exploring data-driven solutions and innovative machine learning applications
           </p>
         </motion.div>
         
@@ -151,3 +151,4 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
