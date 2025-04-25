@@ -42,12 +42,12 @@ const ParticleField = ({
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          count={particles.length / 3}
           array={particles}
           itemSize={3}
         />
       </bufferGeometry>
       <pointsMaterial
+        attach="material"
         size={size}
         color={color}
         sizeAttenuation

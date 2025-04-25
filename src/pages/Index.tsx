@@ -9,7 +9,10 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 // Lazy load the Scene3D component to improve initial load time
-const Scene3D = lazy(() => import('@/components/scene/Scene3D'));
+const Scene3D = lazy(() => import('@/components/scene/Scene3D').catch(() => {
+  console.error('Failed to load Scene3D component');
+  return { default: () => <div className="fixed inset-0 flex items-center justify-center">3D Scene failed to load</div> }
+}));
 
 const Index = () => {
   return (

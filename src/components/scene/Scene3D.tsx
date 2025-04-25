@@ -11,7 +11,7 @@ const Scene3D = () => {
 
   return (
     <div className="canvas-container">
-      <Canvas>
+      <Canvas dpr={[1, 2]}>
         <Suspense fallback={null}>
           <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={50} />
           <ambientLight intensity={0.5} />
