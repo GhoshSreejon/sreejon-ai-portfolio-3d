@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -20,7 +19,7 @@ const HeroSection = () => {
             className="mb-6 relative"
           >
             <span className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-theme-purple/20 to-theme-blue/20 text-sm font-medium backdrop-blur-sm animate-pulse-slow">
-              AI Developer & Creative Technologist
+              Data Analyst & AI/ML Enthusiast
             </span>
           </motion.div>
           
