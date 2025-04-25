@@ -1,5 +1,6 @@
+
 import { motion } from 'framer-motion';
-import { Brain, Code, Rocket, Bot } from 'lucide-react';
+import { Brain, Database, BarChart, Layers, PieChart, Zap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
@@ -16,22 +17,22 @@ const services = [
   {
     icon: <Brain className="h-8 w-8 text-theme-purple" />,
     title: "AI Development",
-    description: "Building custom AI models and solutions for specific business needs and challenges."
+    description: "Designing and implementing advanced AI and machine learning models for complex problem-solving."
   },
   {
-    icon: <Code className="h-8 w-8 text-theme-blue" />,
-    title: "Full-Stack Development",
-    description: "Creating responsive, interactive web applications with modern frameworks and tools."
+    icon: <Layers className="h-8 w-8 text-theme-blue" />,
+    title: "ML Model Projects",
+    description: "Creating sophisticated machine learning solutions tailored to specific business and research needs."
   },
   {
-    icon: <Bot className="h-8 w-8 text-theme-cyan" />,
-    title: "Intelligent Agents",
-    description: "Designing autonomous agents and bots that can perform complex tasks and workflows."
+    icon: <BarChart className="h-8 w-8 text-theme-cyan" />,
+    title: "Data Visualization",
+    description: "Transforming complex data into insightful, interactive visual representations that drive decision-making."
   },
   {
-    icon: <Rocket className="h-8 w-8 text-theme-pink" />,
-    title: "AI Consulting",
-    description: "Strategic guidance on implementing AI technologies to enhance business operations."
+    icon: <PieChart className="h-8 w-8 text-theme-pink" />,
+    title: "Business Intelligence",
+    description: "Leveraging data analytics to provide strategic insights and support critical business decisions."
   }
 ];
 
