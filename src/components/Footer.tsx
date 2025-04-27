@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
@@ -24,19 +23,19 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex space-x-4"
           >
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors p-2">
+            <a href="https://github.com/GhoshSreejon" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors p-2">
+            <a href="https://www.linkedin.com/in/sreejonghosh/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors p-2">
+            <a href="https://x.com/SreejonGhosh" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors p-2">
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </a>
-            <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-foreground transition-colors p-2">
+            <a href="mailto:sreejon.india@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors p-2">
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
             </a>

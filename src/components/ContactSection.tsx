@@ -36,10 +36,10 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "#" },
-    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "#" },
-    { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "#" },
-    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:hello@example.com" }
+    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/GhoshSreejon" },
+    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/sreejonghosh/" },
+    { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://x.com/SreejonGhosh" },
+    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:sreejon.india@gmail.com" }
   ];
 
   const fadeIn = {
@@ -141,8 +141,8 @@ const ContactSection = () => {
                 
                 <div className="mb-8">
                   <p className="text-foreground mb-2">Email:</p>
-                  <a href="mailto:hello@example.com" className="text-primary hover:underline">
-                    hello@example.com
+                  <a href="mailto:sreejon.india@gmail.com" className="text-primary hover:underline">
+                    sreejon.india@gmail.com
                   </a>
                 </div>
                 
