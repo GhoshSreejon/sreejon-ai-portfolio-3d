@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -66,8 +67,8 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 2 }}
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float"
         >
-          <span className="text-sm text-muted-foreground mb-2">Scroll to explore</span>
-          <ArrowDownCircle className="h-6 w-6 text-primary/80" />
+          <span className="text-sm text-muted-foreground/50 mb-2">Scroll to explore</span>
+          <ArrowDownCircle className="h-6 w-6 text-primary/50" />
         </motion.div>
       </div>
     </section>
