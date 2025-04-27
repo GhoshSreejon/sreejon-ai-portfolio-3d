@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -175,11 +174,18 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="mt-6 pt-6 border-t border-border/30">
-                <p className="text-muted-foreground">
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                variants={fadeIn}
+                className="mt-8 text-center border-t border-border/30 pt-8"
+              >
+                <p className="text-muted-foreground font-bold">
                   Open to freelance opportunities and collaborations on interesting projects.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

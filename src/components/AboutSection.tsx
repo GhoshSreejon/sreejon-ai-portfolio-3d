@@ -1,16 +1,26 @@
-
 import { motion } from 'framer-motion';
 import { Brain, Database, BarChart, Layers, PieChart, Zap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 const skills = [
-  { name: "Python", level: 95 },
-  { name: "TensorFlow/PyTorch", level: 90 },
-  { name: "React/TypeScript", level: 85 },
-  { name: "Computer Vision", level: 80 },
-  { name: "NLP", level: 88 },
-  { name: "3D/WebGL", level: 75 },
+  { name: "Java", category: "Programming Languages" },
+  { name: "Python", category: "Programming Languages" },
+  { name: "R", category: "Programming Languages" },
+  { name: "SQL", category: "Programming Languages" },
+  { name: "Pandas", category: "Frameworks / Libraries" },
+  { name: "NumPy", category: "Frameworks / Libraries" },
+  { name: "Scikit-Learn", category: "Frameworks / Libraries" },
+  { name: "OpenCV", category: "Frameworks / Libraries" },
+  { name: "MediaPipe", category: "Frameworks / Libraries" },
+  { name: "TensorFlow", category: "Frameworks / Libraries" },
+  { name: "Streamlit", category: "Frameworks / Libraries" },
+  { name: "IntelliJ IDEA", category: "Tools & Platforms" },
+  { name: "PyCharm", category: "Tools & Platforms" },
+  { name: "Jupyter Notebook", category: "Tools & Platforms" },
+  { name: "VS Code", category: "Tools & Platforms" },
+  { name: "Tableau", category: "Tools & Platforms" },
+  { name: "Microsoft Excel", category: "Tools & Platforms" },
 ];
 
 const services = [
@@ -87,26 +97,21 @@ const AboutSection = () => {
             className="bg-secondary/50 rounded-xl p-6 backdrop-blur-sm"
           >
             <h3 className="text-2xl font-bold mb-6">Skills & Expertise</h3>
-            <div className="space-y-4">
-              {skills.map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.1 * index }}
-                      className={cn(
-                        "h-full rounded-full bg-gradient-to-r",
-                        index % 3 === 0 ? "from-theme-purple to-theme-blue" :
-                        index % 3 === 1 ? "from-theme-blue to-theme-cyan" :
-                        "from-theme-cyan to-theme-pink"
-                      )}
-                    />
+            <div className="space-y-8">
+              {["Programming Languages", "Frameworks / Libraries", "Tools & Platforms"].map((category) => (
+                <div key={category} className="space-y-4">
+                  <h4 className="text-xl font-semibold text-primary">{category}</h4>
+                  <div className="flex flex-wrap gap-3">
+                    {skills
+                      .filter((skill) => skill.category === category)
+                      .map((skill, index) => (
+                        <div
+                          key={index}
+                          className="bg-background/50 px-4 py-2 rounded-full text-sm font-medium"
+                        >
+                          {skill.name}
+                        </div>
+                      ))}
                   </div>
                 </div>
               ))}
