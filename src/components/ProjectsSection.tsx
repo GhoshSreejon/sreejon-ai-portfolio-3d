@@ -1,9 +1,8 @@
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const projects = [
@@ -13,8 +12,7 @@ const projects = [
     description: "Real-time analyzer using Python, OpenCV, and DesigNAR to track emotions and body language. Integrated Google Gemini API for AI-driven behavioral insights.",
     tags: ["Python", "AI", "OpenCV", "Machine Learning", "Google Gemini API"],
     image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=800&auto=format&fit=crop",
-    link: "#",
-    github: "https://github.com/GhoshSreejon",
+    link: "https://github.com/GhoshSreejon/AI-Emotion-Analysis",
     featured: true
   },
   {
@@ -23,8 +21,7 @@ const projects = [
     description: "Built a Native Bayes (Multinomial) model with near 100% precision for spam detection using Python, Scikit-Learn, and real-time spam detection techniques.",
     tags: ["Python", "Machine Learning", "Scikit-Learn", "NLP"],
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-    link: "#",
-    github: "https://github.com/GhoshSreejon",
+    link: "https://www.linkedin.com/posts/sreejonghosh_datascience-machinelearning-nlp-activity-7284763190247256064-ynRI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3eCCoBDZ_b7oiRI5JJTUqQtxEfLsOlxeY",
     featured: true
   },
   {
@@ -33,8 +30,7 @@ const projects = [
     description: "Data interpretation dashboard analyzing global beverage sales, top-selling products, seasonal trends, and regional preferences using Tableau and data visualization.",
     tags: ["Tableau", "Data Analysis", "Data Visualization"],
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
-    link: "#",
-    github: "https://github.com/GhoshSreejon",
+    link: "https://www.linkedin.com/posts/sreejonghosh_datavisualization-tableau-businessanalytics-activity-7284279947639017472-TR0g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3eCCoBDZ_b7oiRI5JJTUqQtxEfLsOlxeY",
     featured: false
   },
   {
@@ -43,8 +39,7 @@ const projects = [
     description: "Analyzed bike purchase trends, identifying factors influencing bike purchases. Created pivot tables, bar charts, and trend lines to highlight insights.",
     tags: ["Excel", "Data Analysis", "Pivot Charts"],
     image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=800&auto=format&fit=crop",
-    link: "#",
-    github: "https://github.com/GhoshSreejon",
+    link: "https://www.linkedin.com/posts/sreejonghosh_insightful-analysis-of-bike-purchasing-activity-7185882089706192896-RNRd/?utm_source=share&utm_medium=member_desktop",
     featured: false
   }
 ];
@@ -109,17 +104,11 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-between pt-2">
+                <CardFooter className="flex justify-center pt-2">
                   <Button variant="outline" size="sm" className="gap-2" asChild>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink size={16} />
-                      Demo
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" className="gap-2" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} />
-                      Code
+                      View Project
                     </a>
                   </Button>
                 </CardFooter>
@@ -151,4 +140,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-
