@@ -1,9 +1,10 @@
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MessageSquare, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MessageSquare, Github, Linkedin, Twitter, Code } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const ContactSection = () => {
@@ -39,7 +40,8 @@ const ContactSection = () => {
     { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/GhoshSreejon" },
     { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/sreejonghosh/" },
     { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://x.com/SreejonGhosh" },
-    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:sreejon.india@gmail.com" }
+    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:sreejon.india@gmail.com" },
+    { icon: <Code className="h-5 w-5" />, label: "LeetCode", href: "https://leetcode.com/u/nemes1s_gg/" }
   ];
 
   const fadeIn = {

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -63,6 +63,20 @@ const Navbar = () => {
               />
             </motion.a>
           ))}
+          
+          {/* Resume Button */}
+          <motion.a
+            href="https://drive.google.com/uc?export=download&id=YOUR_DRIVE_ID"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 * (navItems.length + 1) }}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-theme-purple to-theme-blue text-white hover:opacity-90 transition-all"
+          >
+            <FileText className="w-4 h-4" />
+            Resume
+          </motion.a>
         </div>
         
         {/* Mobile Menu Toggle */}
@@ -96,6 +110,18 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
+            
+            {/* Mobile Resume Link */}
+            <a
+              href="https://drive.google.com/uc?export=download&id=YOUR_DRIVE_ID"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 text-lg font-medium text-foreground py-2"
+            >
+              <FileText className="w-5 h-5" />
+              Resume
+            </a>
           </div>
         </motion.div>
       )}
